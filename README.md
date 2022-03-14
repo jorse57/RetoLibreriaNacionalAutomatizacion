@@ -23,7 +23,7 @@ Inicialmente debes tener instaladas las variables de entorno y pluggins de tu ID
 -Si vas a descargar el archivo 7zip de google drive:
 
 
-  1. Pedir acceso a la carpeta en Drive
+  1. Pedir acceso a la carpeta en Drive https://drive.google.com/drive/folders/1dpxX50gWMvSlc6EFy14Ai1pWHhE88nz_?usp=sharing
   2. Descargar el archivo RetoLibreria.7z
   3. Extraer los archivos(descomprimir) en su computador
   4. Abrir esta carpeta RetoLibreria desde el IDE de su preferencia.
