@@ -18,16 +18,16 @@ public class BusquedaSteps {
 
     @Step
     public void ingresarParametroBusqueda() throws IOException {
-        busquedaPageObjects.getDriver().findElement(busquedaPageObjects.getInputBusqueda()).sendKeys(datos.obtenerDatos("Parametros","Datos.xlsx",1,2));
+        busquedaPageObjects.getDriver().findElement(busquedaPageObjects.getTxtBusqueda()).sendKeys(datos.obtenerDatos("Parametros","Datos.xlsx",1,2));
     }
 
     @Step
     public void accionBuscar(){
-        busquedaPageObjects.getDriver().findElement(busquedaPageObjects.getInputBusqueda()).sendKeys(Keys.ENTER);
+        busquedaPageObjects.getDriver().findElement(busquedaPageObjects.getTxtBusqueda()).sendKeys(Keys.ENTER);
     }
     @Step
     public void validarResultadosBusqueda(){
-        esperaExplicita.esperaElementoVisible(busquedaPageObjects.getDriver(),busquedaPageObjects.getValidarLibro());
-        assertThat(busquedaPageObjects.getDriver().findElement(busquedaPageObjects.getValidarLibro()).isDisplayed(), Matchers.is(true));
+        esperaExplicita.esperaElementoVisible(busquedaPageObjects.getDriver(),busquedaPageObjects.getMsjLibro());
+        assertThat(busquedaPageObjects.getDriver().findElement(busquedaPageObjects.getMsjLibro()).isDisplayed(), Matchers.is(true));
     }
 }
